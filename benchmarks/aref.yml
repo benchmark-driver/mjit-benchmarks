@@ -1,0 +1,13 @@
+prelude: |
+  def a
+    i = 0; a = [42];
+    while i < 2_000_000 do
+      a[0]
+      i += 1
+    end
+  end
+
+benchmark:
+  aref: a
+
+loop_count: 1000

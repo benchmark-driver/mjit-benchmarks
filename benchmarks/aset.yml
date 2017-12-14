@@ -1,0 +1,13 @@
+prelude: |
+  def a
+    i = 0; a = [42]; ind = 0
+    while i < 2_000_000 do
+      a[ind] = 21
+      i += 1
+    end
+  end
+
+benchmark:
+  aset: a
+
+loop_count: 1000

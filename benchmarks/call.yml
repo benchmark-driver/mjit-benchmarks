@@ -1,0 +1,16 @@
+prelude: |
+  def a
+  end
+
+  def l
+    i = 0
+    while i < 100000 do
+      a
+      i += 1
+    end
+  end
+
+benchmark: |
+  call: l
+
+loop_count: 8000
