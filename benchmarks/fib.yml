@@ -1,10 +1,13 @@
-def fib n
-  if n < 3
-    1
-  else
-    fib(n-1) + fib(n-2)
+prelude: |
+  def fib n
+    if n < 3
+      1
+    else
+      fib(n-1) + fib(n-2)
+    end
   end
-end
 
-p fib(43)
+benchmark:
+  fib: fib(43)
 
+loop_count: 1

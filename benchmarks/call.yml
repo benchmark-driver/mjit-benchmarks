@@ -10,7 +10,7 @@ prelude: |
     end
   end
 
-benchmark: |
+benchmark:
   call: l
 
 loop_count: 8000
