@@ -1,5 +1,4 @@
 #!/bin/bash
 exec bundle exec benchmark-driver \
-  --bundler \
   --compare \
   $@
