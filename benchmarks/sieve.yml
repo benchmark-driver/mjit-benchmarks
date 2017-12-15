@@ -18,15 +18,16 @@ prelude: |
     count
   end
 
-benchmark: |
-  n = 9 # (ARGV[0] || 2).to_i
-  Flags = ("\x1" * ( 2 ** n * 10_000)).unpack("c*")
+benchmark:
+  sieve: |
+    n = 9 # (ARGV[0] || 2).to_i
+    Flags = ("\x1" * ( 2 ** n * 10_000)).unpack("c*")
 
-  n.downto(n-2) do |exponent|
-    break if exponent < 0
-    m = (1 << exponent) * 10_000
-    count = 0
-    20.times {count = sieve(m)}
-  end
+    n.downto(n-2) do |exponent|
+      break if exponent < 0
+      m = (1 << exponent) * 10_000
+      count = 0
+      20.times {count = sieve(m)}
+    end
 
 loop_count: 1
