@@ -25,7 +25,7 @@ prelude: |
     count
   end
 
-benchmark: |
+benchmark:
   nsvb: |
     n = 4 # (ARGV[0] || 2).to_i
     n.step(n - 2, -1) do |exponent|
