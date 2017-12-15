@@ -255,4 +255,4 @@ benchmark:
     $pnum = (0...$p.length).to_a
     setpiece([],0)
 
-loop_count: 5
+loop_count: 10
