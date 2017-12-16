@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    benchmark_driver (0.5.1)
+    benchmark_driver (0.6.1)
 
 PLATFORMS
   ruby
@@ -10,4 +10,4 @@ DEPENDENCIES
   benchmark_driver
 
 BUNDLED WITH
-   1.16.0
+   1.16.1.pre1
