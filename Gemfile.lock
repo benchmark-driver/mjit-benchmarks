@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    benchmark_driver (0.6.1)
+    benchmark_driver (0.8.2)
 
 PLATFORMS
   ruby
